@@ -21,22 +21,54 @@
             </div>
         </div>
     </div>
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,gu',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+
+    function translatePageToGujarati() {
+      var dropdown = document.querySelector('.goog-te-combo');
+      dropdown.value = 'gu';
+      dropdown.dispatchEvent(new Event('change'));
+    }
+    function translatePageToGujarati2() {
+      var dropdown = document.querySelector('.goog-te-combo');
+      dropdown.value = 'en';
+      dropdown.dispatchEvent(new Event('change'));
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </header>
 <!-- <nav class="border-b border-gray-300 bg-[#7D5A50] sticky top-0 z-50" id='navbar'> -->
     <nav class="border-b border-[#000000] bg-[#000000] sticky to z-50" id='navbar'>
         <div class="grid justify-items-center">
             <!-- <div class="menu-center flex items-center space-x-12"> -->
                 <ul class="flex items-center text-[#FFFFFF] h-4xl p-4">
-                    <li><a href="#" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 hover:rounded-xl p-2 mr-2">HOME</a></li>
-                    <li><a href="#" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 hover:rounded-xl p-2 mr-2">ABOUT US</a></li>
-                    <li><a href="#" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 hover:rounded-xl p-2 mr-2">PRODUCTS</a></li>
-                    <li><a href="#" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 hover:rounded-xl p-2">CONTACT US</a></li>
+                    <li><a href="#" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 rounded-xl p-1 mr-2">HOME</a></li>
+                    <li><a href="#" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 rounded-xl p-1 mr-2">ABOUT US</a></li>
+                    <li><a href="#" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 rounded-xl p-1 mr-2">PRODUCTS</a></li>
+                    <li><a href="#" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 rounded-xl p-1">CONTACT US</a></li>
                 </ul>
         </div>
     </div>
 </nav>
 <main>
-    hhhh
+    <div id="google_translate_element"></div>
+
+  <!-- Button to Translate to Gujarati -->
+  <button onclick="translatePageToGujarati()">ગુજરાતીમાં અનુવાદ કરો</button>
+  <button onclick="translatePageToGujarati2()">Translate in English</button>
+  <!-- Your website content continues -->
+  <p>This is your website content.</p>
+  Hello how are you. We sell this products.
 </main>
 <footer id="fcont">
     <div class="footer-content">
