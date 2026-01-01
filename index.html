@@ -22,90 +22,147 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/Zanzariya-Irrigation-Pipe/logo/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-
-  <meta name="google" content="notranslate">
-  <meta http-equiv="Content-Language" content="en">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'en,gu',
-        autoDisplay: false
-      }, 'google_translate_element');
-    }
-
-    function translatePageToGujarati() {
-      var dropdown = document.querySelector('.goog-te-combo');
-      dropdown.value = 'gu';
-      dropdown.dispatchEvent(new Event('change'));
-    }
-    function translatePageToGujarati2() {
-      var dropdown = document.querySelector('.goog-te-combo');
-      dropdown.value = 'en';
-      dropdown.dispatchEvent(new Event('change'));
-    }
-  </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
-<header>
-    <div class="border border-[#000000] bg-[#c9bf4e] p-4 flex justify-around">
-        <div class="text-2xl">
-<!--           <img src="LOGO_INDEX.png" alt="Description of the image" class=""> -->
-            <h1>Zanzariya</h1>
-            <h2>IRRIGATION PIPE</h2>
-        </div>
-        <div class="flex justify-around">
-            <img src="Phone_circle.PNG" alt="Description of the image" class="mt-1 w-10 h-10">
-            <div class="ml-2">
-                <div>CALL US: </div>
-                <a href="tel:+919998708689">+919998708689</a>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="flex justify-center h-screen items-center">COMMING SOON</div>
-<!-- <nav class="border-b border-gray-300 bg-[#7D5A50] sticky top-0 z-50" id='navbar'> -->
-    <!--<nav class="border-b border-[#000000] bg-[#000000] sticky to z-50" id='navbar'>
-        <div class="grid justify-items-center">-->
-            <!-- <div class="menu-center flex items-center space-x-12"> -->
-              <!--  <ul class="flex items-center text-[#FFFFFF] h-4xl p-4">
-                    <li><a href="/Zanzariya-Irrigation-Pipe" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 rounded-l p-1 mr-2">HOME</a></li>
-                    <li><a href="/Zanzariya-Irrigation-Pipe/about.html" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 rounded-l p-1 mr-2">ABOUT US</a></li>
-                    <li><a href="/Zanzariya-Irrigation-Pipe/products.html" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 rounded-l p-1 mr-2">PRODUCTS</a></li>
-                    <li><a href="/Zanzariya-Irrigation-Pipe/contact.html" class="text-sm border border-white border-1 hover:border hover:border-white hover:border-2 rounded-l p-1">CONTACT US</a></li>
-                </ul>
-        </div>
-    </div>
-</nav>
-<main>
-    <div id="google_translate_element"></div>-->
+<body class="min-h-screen flex flex-col">
+<!-- <body> -->
+<!-- ================= HEADER ================= -->
+<header class="border border-black bg-[#c9bf4e] p-4 flex justify-between items-center">
 
-  <!-- Button to Translate to Gujarati -->
-  <!--<button class="border border-black border-2 rounded-xl" onclick="translatePageToGujarati()">ગુજરાતીમાં અનુવાદ કરો</button>
-  <button class="border border-black border-2 rounded-xl" onclick="translatePageToGujarati2()">Translate in English</button>-->
-  <!-- Your website content continues -->
- <!-- <p>This is your website content.</p>
-  Hello how are you. We sell this products.
+  <!-- Brand -->
+  <div class="text-2xl font-semibold leading-tight">
+    <h1>Zanzariya</h1>
+    <h2 class="text-lg">IRRIGATION PIPE</h2>
+  </div>
+
+  <!-- Phone -->
+  <div class="flex items-center">
+    <img src="Phone_circle.PNG" alt="Phone" class="w-10 h-10 mr-2" />
+    <div>
+      <div class="text-sm">CALL US:</div>
+      <a href="tel:+919998708689" class="font-medium">+91 99987 08689</a>
+    </div>
+  </div>
+
+  <!-- Language Dropdown -->
+  <div>
+    <select
+      id="languageSelect"
+      class="px-3 py-1 text-sm border border-black rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-black cursor-pointer"
+    >
+      <option value="">ભાષા બદલો</option>
+      <option value="en">English</option>
+      <option value="gu">ગુજરાતી</option>
+    </select>
+
+    <!-- Hidden Google Translate widget -->
+    <div id="google_translate_element" class="hidden"></div>
+  </div>
+
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="border-b border-black bg-black sticky top-0 z-50">
+  <ul class="flex justify-center text-white p-4 space-x-6">
+    <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">HOME</a></li>
+    <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">ABOUT US</a></li>
+    <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">PRODUCTS</a></li>
+    <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">CONTACT US</a></li>
+  </ul>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<!-- <main class="flex-grow p-6">
+
+  <table class="border-collapse border border-slate-400 w-full max-w-md">
+    <thead>
+      <tr>
+        <th class="border border-slate-300 p-2">State</th>
+        <th class="border border-slate-300 p-2">City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border border-slate-300 p-2">Indiana</td>
+        <td class="border border-slate-300 p-2">Indianapolis</td>
+      </tr>
+      <tr>
+        <td class="border border-slate-300 p-2">Ohio</td>
+        <td class="border border-slate-300 p-2">Columbus</td>
+      </tr>
+      <tr>
+        <td class="border border-slate-300 p-2">Michigan</td>
+        <td class="border border-slate-300 p-2">Detroit</td>
+      </tr>
+    </tbody>
+  </table> -->
+
+  <!-- EXPANDABLE DIV -->
+  <!-- <div id="expandable-div" class="w-full max-w-md p-4 bg-white rounded-lg shadow-md cursor-pointer">
+    <div class="title">
+        <h2 class="text-xl font-semibold text-gray-800">Click to expand</h2>
+    </div>
+    <div id="more-info" class="mt-4 hidden">
+        <p class="text-gray-600">This is the additional information that gets revealed when you click on the div. You can put any content here, such as text, images, or other HTML elements.</p>
+    </div>
+  </div> -->
 </main>
-<footer id="fcont">
-    <div class="footer-content">
-        <h3>OffiSync</h3>
-        <p>Connect with US!</p>
-        <ul class="socials">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-            <li><a href="#"><i class="fa fa-github"></i></a></li>
-        </ul>
-    </div>
-    <div class="footer-bottom">
-        <p>Copyright &copy;2023 OffiSync</p>
-    </div>
-</footer>-->
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-100 border-t border-gray-300 p-6 text-center">
+  <h3 class="text-lg font-semibold">OffiSync</h3>
+  <p class="text-sm text-gray-600 mb-2">Connect with us!</p>
+  <p class="text-xs text-gray-500">© 2023 OffiSync</p>
+</footer>
+
+<!-- ================= GOOGLE TRANSLATE ================= -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'en',
+      includedLanguages: 'en,gu',
+      autoDisplay: false
+    },
+    'google_translate_element'
+  );
+}
+</script>
+
+<script
+  type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+<!-- ================= TRANSLATE CONTROL SCRIPT ================= -->
+<script>
+document.getElementById('languageSelect').addEventListener('change', function () {
+  const selectedLang = this.value;
+  if (!selectedLang) return;
+
+  const waitForGoogle = setInterval(() => {
+    const googleSelect = document.querySelector('.goog-te-combo');
+    if (googleSelect) {
+      googleSelect.value = selectedLang;
+      googleSelect.dispatchEvent(new Event('change'));
+      clearInterval(waitForGoogle);
+    }
+  }, 100);
+});
+</script>
+
+<!-- EXPANDABLE DIV -->
+<!-- <script>
+  const expandableDiv = document.getElementById('expandable-div');
+  const moreInfo = document.getElementById('more-info');
+
+  expandableDiv.addEventListener('click', () => {
+      moreInfo.classList.toggle('hidden');
+  });
+</script> -->
+
+</body>
 </body>
 </html>
