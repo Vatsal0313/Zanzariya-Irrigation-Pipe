@@ -4,378 +4,365 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome | ZanzariyaIrrigation</title>
+  
   <script src="https://cdn.tailwindcss.com"></script>
+  
   <link rel="apple-touch-icon" sizes="57x57" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/Zanzariya-Irrigation-Pipe/logo/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/Zanzariya-Irrigation-Pipe/logo/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/Zanzariya-Irrigation-Pipe/logo/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/Zanzariya-Irrigation-Pipe/logo/favicon-16x16.png">
-<link rel="manifest" href="/Zanzariya-Irrigation-Pipe/logo/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/Zanzariya-Irrigation-Pipe/logo/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="60x60" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Zanzariya-Irrigation-Pipe/logo/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/Zanzariya-Irrigation-Pipe/logo/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Zanzariya-Irrigation-Pipe/logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/Zanzariya-Irrigation-Pipe/logo/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Zanzariya-Irrigation-Pipe/logo/favicon-16x16.png">
+  <link rel="manifest" href="/Zanzariya-Irrigation-Pipe/logo/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/Zanzariya-Irrigation-Pipe/logo/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body class="min-h-screen flex flex-col">
-<!-- <body> -->
-<!-- ================= HEADER ================= -->
-<header class="border border-black bg-[#c9bf4e] p-4 flex justify-between items-center">
-
-  <!-- Brand -->
-  <div class="text-2xl font-semibold leading-tight">
-    <h1>Zanzariya</h1>
-    <h2 class="text-lg">IRRIGATION PIPE</h2>
-  </div>
-
-  <!-- Phone -->
-  <div class="flex items-center">
-    <img src="Phone_circle.PNG" alt="Phone" class="w-10 h-10 mr-2" />
-    <div>
-      <div class="text-sm">CALL US:</div>
-      <a href="tel:+919998708689" class="font-medium">+91 99987 08689</a>
+  <!-- ================= HEADER ================= -->
+  <header class="border border-black bg-[#c9bf4e] p-4 flex justify-around">
+  <!-- <header class="border border-black bg-[#c9bf4e] p-4 flex justify-between items-center"> -->
+    <!-- Brand -->
+    <div class="text-2xl font-semibold leading-tight">
+      <h1>Zanzariya</h1>
+      <h2 class="text-lg">IRRIGATION PIPE</h2>
     </div>
-  </div>
+    <!-- Phone -->
+    <div class="flex items-center">
+      <img src="Phone_circle.PNG" alt="Phone" class="w-10 h-10 mr-2" />
+      <div>
+        <div class="text-sm">CALL US:</div>
+        <a href="tel:+919998708689" class="font-medium">+91 99987 08689</a>
+      </div>
+    </div>
+    <!-- Language Dropdown -->
+    <div>
+      <select
+        id="languageSelect"
+        class="px-3 py-1 text-sm border border-black rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-black cursor-pointer"
+      >
+        <option value="">ભાષા બદલો</option>
+        <option value="en">English</option>
+        <option value="gu">ગુજરાતી</option>
+      </select>
+      <!-- Hidden Google Translate widget -->
+      <div id="google_translate_element" class="hidden"></div>
+    </div>
+  </header>
+  <!-- ================= NAVBAR ================= -->
+  <!-- <nav class="border-b border-black bg-black sticky top-0 z-50">
+    <ul class="flex justify-center text-white p-4 space-x-6">
+      <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">HOME</a></li>
+      <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">ABOUT US</a></li>
+      <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">PRODUCTS</a></li>
+      <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">CONTACT US</a></li>
+    </ul>
+  </nav> -->
 
-  <!-- Language Dropdown -->
-  <div>
-    <select
-      id="languageSelect"
-      class="px-3 py-1 text-sm border border-black rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-black cursor-pointer"
-    >
-      <option value="">ભાષા બદલો</option>
-      <option value="en">English</option>
-      <option value="gu">ગુજરાતી</option>
-    </select>
+  <!-- ================= MAIN ================= -->
+  <!-- <main class="flex-grow p-6">
+    <table class="border-collapse border border-slate-400 w-full max-w-md">
+      <thead>
+        <tr>
+          <th class="border border-slate-300 p-2">State</th>
+          <th class="border border-slate-300 p-2">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-300 p-2">Indiana</td>
+          <td class="border border-slate-300 p-2">Indianapolis</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-300 p-2">Ohio</td>
+          <td class="border border-slate-300 p-2">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-300 p-2">Michigan</td>
+          <td class="border border-slate-300 p-2">Detroit</td>
+        </tr>
+      </tbody>
+    </table> -->
+    <!-- EXPANDABLE DIV -->
+    <!-- <div id="expandable-div" class="w-full max-w-md p-4 bg-white rounded-lg shadow-md cursor-pointer">
+      <div class="title">
+          <h2 class="text-xl font-semibold text-gray-800">Click to expand</h2>
+      </div>
+      <div id="more-info" class="mt-4 hidden">
+          <p class="text-gray-600">This is the additional information that gets revealed when you click on the div. You can put any content here, such as text, images, or other HTML elements.</p>
+      </div>
+    </div> -->
+    <main class="flex-grow p-4 md:p-8 bg-gray-50">
+      <div class="max-w-4xl mx-auto space-y-10">
+        <div class="mb-6 text-center">
+          <h3 class="text-xl md:text-2xl font-bold text-gray-800 border-b-2 border-[#c9bf4e] inline-block pb-1">
+            અમે આ પ્રકારના HDPE પાઇપ વેચીએ છીએ
+          </h3>
+          <div class="pt-2">પાઈપ માટે પ્રતિ કિલો ભાવ જાણવા માટે અમને કૉલ કરો <a href="tel:+919998708689" class="font-medium">+91 99987 08689</a></div>
+        </div>
+        <section>
+          <h2 class="bg-[#c9bf4e] text-black font-bold p-2 border border-black mb-2 text-center uppercase">પાથરવાનો (નોન વર્જિન)</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse border border-black text-sm text-center bg-white">
+              <thead class="bg-gray-100 font-semibold">
+                <tr>
+                  <th class="border border-black p-2">ઈંચ</th>
+                  <th class="border border-black p-2">૬ કિ.ગ્રા. પ્રતિ ફૂટ</th>
+                  <th class="border border-black p-2">૮ કિ.ગ્રા. પ્રતિ ફૂટ</th>
+                  <th class="border border-black p-2">સળંગ લંબાઈ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૨</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">૫૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૨||</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">૫૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૩</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">૪૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૪</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">૨૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૫</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">૨૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૬</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">૨૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૦||</td>
+                  <td class="border border-black p-2">(૨૫ mm) ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૧૦૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૦|||</td>
+                  <td class="border border-black p-2">(૨૮ mm) ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૧૦૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૧</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૧૦૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૧|</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૧૦૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૧||</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૧૦૦૦ ફૂટ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-    <!-- Hidden Google Translate widget -->
-    <div id="google_translate_element" class="hidden"></div>
-  </div>
+        <section>
+          <h2 class="bg-[#c9bf4e] text-black font-bold p-2 border border-black mb-2 text-center uppercase">કૂવાની ઊંડાઈનો (સેમી વર્જિન)</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse border border-black text-sm text-center bg-white">
+              <thead class="bg-gray-100 font-semibold">
+                <tr>
+                  <th class="border border-black p-2">ઈંચ</th>
+                  <th class="border border-black p-2">૮ કિ.ગ્રા. પ્રતિ ફૂટ</th>
+                  <th class="border border-black p-2">૧૦ કિ.ગ્રા. પ્રતિ ફૂટ</th>
+                  <th class="border border-black p-2">સળંગ લંબાઈ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૨</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૨૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૨.૫</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૨૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૩</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૨૦૦ ફૂટ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-</header>
-<!-- ================= NAVBAR ================= -->
-<!-- <nav class="border-b border-black bg-black sticky top-0 z-50">
-  <ul class="flex justify-center text-white p-4 space-x-6">
-    <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">HOME</a></li>
-    <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">ABOUT US</a></li>
-    <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">PRODUCTS</a></li>
-    <li><a href="#" class="px-3 p-2 text-sm border border-2 border-white rounded-xl hover:bg-white hover:text-black">CONTACT US</a></li>
-  </ul>
-</nav> -->
+        <section>
+          <h2 class="bg-[#c9bf4e] text-black font-bold p-2 border border-black mb-2 text-center uppercase">બોરિંગની ઊંડાઈનો (સેમી વર્જિન)</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse border border-black text-sm text-center bg-white">
+              <thead class="bg-gray-100 font-semibold">
+                <tr>
+                  <th class="border border-black p-2">ઈંચ</th>
+                  <th class="border border-black p-2">૮ કિ.ગ્રા. પ્રતિ ફૂટ</th>
+                  <th class="border border-black p-2">૧૦ કિ.ગ્રા. પ્રતિ ફૂટ</th>
+                  <th class="border border-black p-2">સળંગ લંબાઈ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૧</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૫૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૧|</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૫૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૧||</td>
+                  <td class="border border-black p-2">--</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૫૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૨</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૫૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૨||</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૫૦૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૩</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">ઉપલબ્ધ</td>
+                  <td class="border border-black p-2">૫૦૦ ફૂટ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-<!-- ================= MAIN ================= -->
-<!-- <main class="flex-grow p-6">
+        <section>
+          <h2 class="bg-[#c9bf4e] text-black font-bold p-2 border border-black mb-2 text-center uppercase">સ્પ્રિંકલર પાઈપ (સેમી વર્જિન)</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse border border-black text-sm text-center bg-white">
+              <thead class="bg-gray-100 font-semibold">
+                <tr>
+                  <th class="border border-black p-2">ઈંચ</th>
+                  <th class="border border-black p-2">સળંગ લંબાઈ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૨</td>
+                  <td class="border border-black p-2">૨૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૨||</td>
+                  <td class="border border-black p-2">૨૦ ફૂટ</td>
+                </tr>
+                <tr>
+                  <td class="border border-black p-2 font-bold">૩</td>
+                  <td class="border border-black p-2">૨૦ ફૂટ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+  
+  <!-- ================= FOOTER ================= -->
+  <!-- <footer class="bg-gray-100 border-t border-gray-300 p-6 text-center">
+    <h3 class="text-lg font-semibold">OffiSync</h3>
+    <p class="text-sm text-gray-600 mb-2">Connect with us!</p>
+    <p class="text-xs text-gray-500">© 2023 OffiSync</p>
+  </footer> -->
+  
+  <!-- ================= GOOGLE TRANSLATE ================= -->
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'gu',
+        includedLanguages: 'en,gu',
+        autoDisplay: false
+      },
+      'google_translate_element'
+    );
+  }
+  </script>
 
-  <table class="border-collapse border border-slate-400 w-full max-w-md">
-    <thead>
-      <tr>
-        <th class="border border-slate-300 p-2">State</th>
-        <th class="border border-slate-300 p-2">City</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="border border-slate-300 p-2">Indiana</td>
-        <td class="border border-slate-300 p-2">Indianapolis</td>
-      </tr>
-      <tr>
-        <td class="border border-slate-300 p-2">Ohio</td>
-        <td class="border border-slate-300 p-2">Columbus</td>
-      </tr>
-      <tr>
-        <td class="border border-slate-300 p-2">Michigan</td>
-        <td class="border border-slate-300 p-2">Detroit</td>
-      </tr>
-    </tbody>
-  </table> -->
+  <script
+    type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+  </script>
+
+  <!-- ================= TRANSLATE CONTROL SCRIPT ================= -->
+  <script>
+  document.getElementById('languageSelect').addEventListener('change', function () {
+    const selectedLang = this.value;
+    if (!selectedLang) return;
+
+    const waitForGoogle = setInterval(() => {
+      const googleSelect = document.querySelector('.goog-te-combo');
+      if (googleSelect) {
+        googleSelect.value = selectedLang;
+        googleSelect.dispatchEvent(new Event('change'));
+        clearInterval(waitForGoogle);
+      }
+    }, 100);
+  });
+  </script>
 
   <!-- EXPANDABLE DIV -->
-  <!-- <div id="expandable-div" class="w-full max-w-md p-4 bg-white rounded-lg shadow-md cursor-pointer">
-    <div class="title">
-        <h2 class="text-xl font-semibold text-gray-800">Click to expand</h2>
-    </div>
-    <div id="more-info" class="mt-4 hidden">
-        <p class="text-gray-600">This is the additional information that gets revealed when you click on the div. You can put any content here, such as text, images, or other HTML elements.</p>
-    </div>
-  </div> -->
-<!-- </main> -->
-<main class="flex-grow p-4 md:p-8 bg-gray-50">
-    <div class="max-w-4xl mx-auto space-y-10">
-      <div class="mb-6 text-center">
-        <h3 class="text-xl md:text-2xl font-bold text-gray-800 border-b-2 border-[#c9bf4e] inline-block pb-1">
-          અમે આ પ્રકારના HDPE પાઇપ વેચીએ છીએ
-        </h3>
-        <div class="pt-2">પાઈપ માટે પ્રતિ કિલો ભાવ જાણવા માટે અમને કૉલ કરો <a href="tel:+919998708689"
-            class="font-medium">+91 99987 08689</a></div>
-      </div>
-      <section>
-        <h2 class="bg-[#c9bf4e] text-black font-bold p-2 border border-black mb-2 text-center uppercase">પાથરવાનો (નોન
-          વર્જિન)</h2>
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse border border-black text-sm text-center bg-white">
-            <thead class="bg-gray-100 font-semibold">
-              <tr>
-                <th class="border border-black p-2">ઈંચ</th>
-                <th class="border border-black p-2">૬ કિ.ગ્રા. પ્રતિ ફૂટ</th>
-                <th class="border border-black p-2">૮ કિ.ગ્રા. પ્રતિ ફૂટ</th>
-                <th class="border border-black p-2">સળંગ લંબાઈ</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="border border-black p-2 font-bold">૨</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">૫૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૨||</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">૫૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૩</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">૪૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૪</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">૨૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૫</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">૨૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૬</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">૨૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૦||</td>
-                <td class="border border-black p-2">(૨૫ mm) ઉપલબ્ધ</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૧૦૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૦|||</td>
-                <td class="border border-black p-2">(૨૮ mm) ઉપલબ્ધ</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૧૦૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૧</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૧૦૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૧|</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૧૦૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૧||</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૧૦૦૦ ફૂટ</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+  <!-- <script>
+    const expandableDiv = document.getElementById('expandable-div');
+    const moreInfo = document.getElementById('more-info');
 
-      <section>
-        <h2 class="bg-[#c9bf4e] text-black font-bold p-2 border border-black mb-2 text-center uppercase">કૂવાની ઊંડાઈનો
-          (સેમી વર્જિન)</h2>
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse border border-black text-sm text-center bg-white">
-            <thead class="bg-gray-100 font-semibold">
-              <tr>
-                <th class="border border-black p-2">ઈંચ</th>
-                <th class="border border-black p-2">૮ કિ.ગ્રા. પ્રતિ ફૂટ</th>
-                <th class="border border-black p-2">૧૦ કિ.ગ્રા. પ્રતિ ફૂટ</th>
-                <th class="border border-black p-2">સળંગ લંબાઈ</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="border border-black p-2 font-bold">૨</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૨૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૨.૫</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૨૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૩</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૨૦૦ ફૂટ</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="bg-[#c9bf4e] text-black font-bold p-2 border border-black mb-2 text-center uppercase">બોરિંગની
-          ઊંડાઈનો (સેમી વર્જિન)</h2>
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse border border-black text-sm text-center bg-white">
-            <thead class="bg-gray-100 font-semibold">
-              <tr>
-                <th class="border border-black p-2">ઈંચ</th>
-                <th class="border border-black p-2">૮ કિ.ગ્રા. પ્રતિ ફૂટ</th>
-                <th class="border border-black p-2">૧૦ કિ.ગ્રા. પ્રતિ ફૂટ</th>
-                <th class="border border-black p-2">સળંગ લંબાઈ</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="border border-black p-2 font-bold">૧</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૫૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૧|</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૫૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૧||</td>
-                <td class="border border-black p-2">--</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૫૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૨</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૫૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૨||</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૫૦૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૩</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">ઉપલબ્ધ</td>
-                <td class="border border-black p-2">૫૦૦ ફૂટ</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="bg-[#c9bf4e] text-black font-bold p-2 border border-black mb-2 text-center uppercase">સ્પ્રિંકલર પાઈપ
-          (સેમી વર્જિન)</h2>
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse border border-black text-sm text-center bg-white">
-            <thead class="bg-gray-100 font-semibold">
-              <tr>
-                <th class="border border-black p-2">ઈંચ</th>
-                <th class="border border-black p-2">સળંગ લંબાઈ</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="border border-black p-2 font-bold">૨</td>
-                <td class="border border-black p-2">૨૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૨||</td>
-                <td class="border border-black p-2">૨૦ ફૂટ</td>
-              </tr>
-              <tr>
-                <td class="border border-black p-2 font-bold">૩</td>
-                <td class="border border-black p-2">૨૦ ફૂટ</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-    </div>
-  </main>
-
-
-<!-- ================= FOOTER ================= -->
-<!-- <footer class="bg-gray-100 border-t border-gray-300 p-6 text-center">
-  <h3 class="text-lg font-semibold">OffiSync</h3>
-  <p class="text-sm text-gray-600 mb-2">Connect with us!</p>
-  <p class="text-xs text-gray-500">© 2023 OffiSync</p>
-</footer> -->
-
-<!-- ================= GOOGLE TRANSLATE ================= -->
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {
-      pageLanguage: 'gu',
-      includedLanguages: 'en,gu',
-      autoDisplay: false
-    },
-    'google_translate_element'
-  );
-}
-</script>
-
-<script
-  type="text/javascript"
-  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-</script>
-
-<!-- ================= TRANSLATE CONTROL SCRIPT ================= -->
-<script>
-document.getElementById('languageSelect').addEventListener('change', function () {
-  const selectedLang = this.value;
-  if (!selectedLang) return;
-
-  const waitForGoogle = setInterval(() => {
-    const googleSelect = document.querySelector('.goog-te-combo');
-    if (googleSelect) {
-      googleSelect.value = selectedLang;
-      googleSelect.dispatchEvent(new Event('change'));
-      clearInterval(waitForGoogle);
-    }
-  }, 100);
-});
-</script>
-
-<!-- EXPANDABLE DIV -->
-<!-- <script>
-  const expandableDiv = document.getElementById('expandable-div');
-  const moreInfo = document.getElementById('more-info');
-
-  expandableDiv.addEventListener('click', () => {
-      moreInfo.classList.toggle('hidden');
-  });
-</script> -->
+    expandableDiv.addEventListener('click', () => {
+        moreInfo.classList.toggle('hidden');
+    });
+  </script> -->
 
 </body>
 </html>
